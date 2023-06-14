@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quote Generator</title>
+    <link rel="stylesheet" href="generator.css" />
+    <script src="generator.js"></script>
+  </head>
+  <body>
+    <div class="onglets">
+      <button onclick="openOnglet(event,'Quote generator')" id="onglet">
+        Quote generator
+      </button>
+      <button onclick="openOnglet(event,'Favorites')" id="onglet">
+        Favorites
+      </button>
+    </div>
+
+    <div class="content" id="Quote generator">
+      <h2>Generate quotes and save the ones you love most in Favorites</h2>
+      <div class="container">
+        <div class="centered">
+          <button id="generate">Generate</button>
+          <button id="addTo_favorites">Add To Favorites</button>
+        </div>
+      </div>
+      <div class="circle">
+        <p>Votre phrase ici</p>
+      </div>
+    </div>
+
+    <div class="content" id="Favorites">
+      <h2>Your favorite quotes</h2>
+    </div>
+  </body>
+</html>
