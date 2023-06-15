@@ -3,28 +3,32 @@ body {
   background-image: linear-gradient(to bottom, #ffd89b, #84b5df);
   background-repeat: no-repeat;
 }
+/*cusomize the buttons Quote generator and Favorites*/
 .onglets button {
   background-color: inherit;
   letter-spacing: 2px;
   border: none;
   outline: 0;
-  color: #fff;
+  color: black;
   cursor: pointer;
   padding: 15px 237px;
   transition: 0.5s;
   font-size: 17px;
 }
+/*add a hover transition*/
 .onglets button:hover {
   background-color: #facf89;
 }
+/*the content of all the pages*/
 .content {
-  color: #fff;
+  color: black;
   display: none;
   flex-direction: column;
   padding: 6px 50px;
 }
+/*customize Generate and add to favorites buttons*/
 .content button {
-  color: #fff;
+  color: black;
   background-color: #84b5df;
   border: none;
   width: 250px;
@@ -38,6 +42,7 @@ body {
   justify-content: center;
   height: 70vh;
 }
+/*add hover transitions*/
 #generate:hover {
   background-color: #79addb;
   transition: 0.15s;
@@ -61,7 +66,19 @@ body {
   transform: translate(-50%, -50%);
   box-shadow: 10px 10px 10px 10px rgba(162, 161, 161, 0.2);
 }
-
+/*modifie the text inside the circle*/
 .circle p {
   text-align: center;
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+/*modifie the text in Favorites*/
+#favoris-liste {
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#fav {
+  color: black;
 }

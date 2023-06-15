@@ -10,6 +10,7 @@
   </head>
   <body>
     <div class="onglets">
+      <!---->
       <button onclick="openOnglet(event,'Quote generator')" id="onglet">
         Quote generator
       </button>
@@ -22,17 +23,22 @@
       <h2>Generate quotes and save the ones you love most in Favorites</h2>
       <div class="container">
         <div class="centered">
-          <button id="generate">Generate</button>
-          <button id="addTo_favorites">Add To Favorites</button>
+          <!--two buttons to generate and add to favorites-->
+          <button onclick="QuoteGenerator()" id="generate">Generate</button>
+          <button onclick="ajouterAuxFavoris()" id="addTo_favorites">
+            Add To Favorites
+          </button>
         </div>
       </div>
+      <!--a circle that will containt the quote-->
       <div class="circle">
-        <p>Votre phrase ici</p>
+        <p id="Quote"></p>
       </div>
     </div>
-
+    <!--favorites containts all the favorite quotes -->
     <div class="content" id="Favorites">
-      <h2>Your favorite quotes</h2>
+      <h1 id="fav">Your favorite quotes</h1>
+      <ul id="favoris-liste"></ul>
     </div>
   </body>
 </html>
